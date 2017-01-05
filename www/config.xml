@@ -11,12 +11,12 @@
   <author email="contact@ichtussd.com" href="http://ichtussd.com/">
       ICHTUS SD INC.
     </author>
-  <content src="index.html"/> 
+  <content src="index.html"/>
   <access origin="*"/>
   <access origin="https://api.edamam.com"/>
 <icon src="icon.png"/>
 <splash src="splash.png"/>
-<plugin name="cordova-plugin-splashcreen" source="npm"/>
+
   <platform name="android">
     <icon src="resources/android/icon/drawable-ldpi-icon.png" density="ldpi"/>
     <icon src="resources/android/icon/drawable-mdpi-icon.png" density="mdpi"/>
