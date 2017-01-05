@@ -1,5 +1,49 @@
-<ion-view view-title="Search">
+<ion-view view-title="Recipe Search"  >
+
   <ion-content>
-    <h1>Search</h1>
-  </ion-content>
+     <h2 align='center'><font style='color:white'>What can I cook with ...?</font></h2>
+
+      <input class='block' id='query2' name="query2" ng-model='query2' type='text' placeholder=' Ingredients (e.g. Chicken,Brocooli)'/>
+      <div class='button-bar'>
+            <button  class="button button-calm" ng-click="searchRecipe(query2)" style='round:false'> Search</button>
+            <!-- <button   style='max-width:10%' class="button  button-energized ion-funnel" round='false' ng-click="go('app.filter')"></button> -->
+     </div>
+     <div class='button-bar bar-stable'>
+            <button class='button button-small button-energized' ng-click='showFilterCalories()' ><i class='myicon ion-connection-bars  '></i></button>
+            <button class='button button-small button-energized' ng-click='showFilterIngredients()' ><i class='myicon ion-funnel'></i></button>
+            <button class='button button-small button-energized' ng-click='showFilterDiets()'><i class='myicon ion-heart'></i></button>
+            <button class='button button-small button-energized' ng-click='showFilterCaution()' ><i class='ion-alert-circled myicon'></i></button>
+            <!-- <button class='button button-small button-energized' ><i class=' ion-funnel myicon'></i></button> -->
+
+      </div>
+    <ion-list>
+
+        <ion-item class='item item-thumbnail-left' ng-model='list' ng-repeat="recipe in recipes" ng-click='viewRecipe(recipe)'>
+          <img ng-src="{{recipe.image}}"/>
+          <h2>{{recipe.label}}</h2>
+
+          <style>
+          th, td {
+            padding: 3px;
+                  }
+          </style>
+                    <h4>
+          <table>
+          <tr>
+           <td>    <b> Calories: </b>{{recipe.calories | limitTo:6}} </td><td>| <b>Source:</b> {{recipe.source}}</td>
+          </tr>
+          <tr>
+             <td> <b>Total Ingredients: </b>{{recipe.numOfIngredients}}</td><td>|    <b>Warning Count: </b>{{recipe.cautionsCount}}</td>
+          </tr>
+          </table>
+<br/>
+            <b>Tags:</b> &nbsp{{recipe.healthLabels[0]}},{{recipe.healthLabels[1]}},{{recipe.healthLabels[2]}},{{recipe.diet[0]}}
+            </h4>
+
+
+        </ion-item>
+
+    </ion-list>
+
+</ion-content>
 </ion-view>

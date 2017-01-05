@@ -1,0 +1,73 @@
+<ion-view view-title="Recipe Info" >
+  <ion-content class='filter-bg'>
+    <h2 align='center'> <font color='white'>Recipe Info</font></h2>
+
+    <h4> <font color='white'> {{recipeData.label}}</font></h4>
+    <table>
+      <tr>
+        <td><img ng-src="{{recipeData.image}}" style='height:150px'/></td>
+        <td>
+          <h5> <font color='white' size='1px'>
+            <table class='white-table'>
+              <tr>
+                <td><b>Calories: </b></td><td>{{recipeData.calories | limitTo:6}}</td>
+              </tr>
+              <tr>
+                <td><b>Source:</b></td><td> {{recipeData.source}}</td>
+              </tr>
+              <tr>
+                <td><b>Total Ingredients: </b></td><td>{{recipeData.numOfIngredients}}</td>
+              </tr>
+              <tr>
+                <td><b>Warning Count: </b></td><td>{{recipeData.cautionsCount}}</td>
+              </tr>
+              <tr>
+                <td>Link:</td><td><a align='right' class='button button-small button-balanced' href='{{recipeData.url}}'>  Go to Recipe Site</a></td>
+              </tr>
+            </table>
+          </font>
+        </h5>
+      </td>
+    </tr>
+    </td>
+  </tr>
+</table>
+<font size='1px' style='color:white'>
+  <b>Health Tags:</b>
+  <li ng-repeat='tags in recipeData.healthLabels' ng-bind="tags + ($last ? '' : ', ')"></li>
+</font>
+<font size='1px' style='color:white'>
+  <br/><b>Diet Tags:</b>
+  <li ng-repeat='diet in recipeData.diet' ng-bind="diet + ($last ? '' : ', ')"></li>
+</font>
+<h5><font style='color:white'>Ingredients</font></h5>
+<ion-item style='background-color: rgba(90, 90, 90, .7) !important;' ng-model='list' ng-style="{'line-height': '8px'}" ng-repeat="ingredient in recipeData.ingredients" >
+  <font style='color:white' size='2px'>{{ingredient}}</font>
+</ion-item>
+
+</ion-content>
+<style>
+li {
+  display: inline-block;
+}
+td {
+  vertical-align: top;
+  padding: 5px;
+}
+
+
+.white-table td {
+  padding: 5px;
+  opacity:1 !important;
+  vertical-align:middle;;
+  border: 1px solid white;
+  border-collapse: collapse;
+}
+label {
+  color:white;
+  opacity:1 !important;
+}
+
+
+</style>
+</ion-view>
