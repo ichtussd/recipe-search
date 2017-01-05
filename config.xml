@@ -5,13 +5,14 @@
   <description>
         App to help people find recipes based on their ingredients.
     </description>
-  <author email="you@example.com" href="http://example.com/">
-      Your Name Here
+  <author email="ichtussd@roldan-us.com" href="ichtussd.com">
+      ICHTUS SD. Inc.
     </author>
   <content src="index.html"/>
   <access origin="*"/>
-  <icon src='icon.png'/>
-  <splash src='splash.png'/>
+  <access origin='https://api.edamam.com'/>
+  <icon src='resources/icon.png'/>
+  <splash src='resources/splash.png'/>
   <preference name="webviewbounce" value="false"/>
   <preference name="UIWebViewBounce" value="false"/>
   <preference name="DisallowOverscroll" value="true"/>
