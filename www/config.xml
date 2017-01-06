@@ -1,9 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<widget id="com.ionicframework.recipesearchv3"
-              version="1.0.0"
-              xmlns="http://www.w3.org/ns/widgets"
-              xmlns:gap="http://phonegap.com/ns/1.0"
-              versionCode="1">
+<widget id="com.ionicframework.recipesearchv2591153" version="0.0.1"
+  `````xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://build.phonegap.com/ns/1.0">
   <name>RecipeSearch2.0</name>
   <description>
         An App to help people find recipes based on their ingredients.
@@ -14,9 +11,8 @@
   <content src="index.html"/>
   <access origin="*"/>
   <access origin="https://api.edamam.com"/>
-<icon src="icon.png"/>
-<splash src="splash.png"/>
-
+<icon src="resources/android/icon/drawable-xhdpi-icon.png"/>
+<splash src="resources/splash.png"/>
   <platform name="android">
     <icon src="resources/android/icon/drawable-ldpi-icon.png" density="ldpi"/>
     <icon src="resources/android/icon/drawable-mdpi-icon.png" density="mdpi"/>

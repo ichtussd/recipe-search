@@ -1,1 +1,58 @@
-/* Empty. Add your own CSS if you like */
+
+.bar-stable .button {
+      border-color: transparent;
+ }
+
+button{
+    border-radius: 0px !Important;
+   -webkit-border-radius: 0px !Important;
+}
+
+i.myicon {
+  font-size: 30px;
+}
+
+.scroll-content{
+background-image:url("../img/background.jpg");
+-webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+}
+
+.filter-bg {
+background-image:url("../img/filter-bg.jpg");
+-webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+}
+
+input[type="text"] {
+  width: 100%;
+  display: table;
+}
+
+
+.menu-bar {
+    background-color:black !important;
+
+}
+
+.menu-bar h1{
+    color:white !important;
+}
+
+.main-nav-bar{
+      background-color: green !important;
+
+.right{
+     text-align:right !important;
+     width:5%;
+}
+
+.list-title {
+      color:white !important;
+}
+
+label {
+    color:white !important;
+}
