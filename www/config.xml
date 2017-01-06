@@ -13,6 +13,16 @@
   <access origin="https://api.edamam.com"/>
 <icon src="icon.png"/>
 <splash src="splash.png"/>
+<preference name="webviewbounce" value="false"/>
+<preference name="UIWebViewBounce" value="false"/>
+<preference name="DisallowOverscroll" value="true"/>
+<preference name="SplashScreenDelay" value="2000"/>
+<preference name="FadeSplashScreenDuration" value="2000"/>
+<preference name="android-minSdkVersion" value="16"/>
+<preference name="BackupWebStorage" value="none"/>
+<preference name="SplashScreen" value="screen"/>
+<feature name="StatusBar">
+  <param name="ios-package" value="CDVStatusBar" onload="true"/>
   <platform name="android">
     <icon src="resources/android/icon/drawable-ldpi-icon.png" density="ldpi"/>
     <icon src="resources/android/icon/drawable-mdpi-icon.png" density="mdpi"/>
