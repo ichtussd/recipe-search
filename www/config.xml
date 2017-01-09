@@ -8,7 +8,7 @@
       ICHTUS SD INC.
     </author>
   <content src="index.html"/>
-  <access origin="*"/>
+  
   <access origin="https://api.edamam.com"/>
 <icon src="icon.png"/>
 <splash src="splash.png"/>
