@@ -11,8 +11,8 @@
     <content src="index.html"/>
     <access origin="*"/>
     <access origin="https://api.edamam.com"/>
-  <icon src="icon.png"/>
-  <splash src="splash.png"/>
+  <icon src="www/icon.png"/>
+  <splash src="www/splash.png"/>
   <preference name="webviewbounce" value="false"/>
   <preference name="UIWebViewBounce" value="false"/>
   <preference name="DisallowOverscroll" value="true"/>
